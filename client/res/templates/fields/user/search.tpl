@@ -19,7 +19,7 @@
     <div class="input-group add-team">
         <input class="form-control input-sm element-one-of" type="text" value="" autocomplete="espo-{{name}}" placeholder="{{translate 'Select'}}">
         <span class="input-group-btn">
-            <button data-action="selectLinkOneOf" class="btn btn-primary btn-sm btn-icon" type="button" tabindex="-1" title="{{translate 'Select'}}"><span class="fas fa-angle-up"></span></button>
+            <button data-action="selectLinkOneOf" class="btn btn-primary btn-sm btn-icon" type="button" tabindex="-1" title="{{translate 'Select'}}"><em class="icon ni ni-chevron-up-c"></em></button>
         </span>
     </div>
 </div>
@@ -30,7 +30,7 @@
     <div class="input-group add-team">
         <input class="form-control input-sm element-teams" type="text" value="" autocomplete="espo-{{name}}" placeholder="{{translate 'Select'}}">
         <span class="input-group-btn">
-            <button data-action="selectLinkTeams" class="btn btn-primary btn-sm btn-icon" type="button" tabindex="-1" title="{{translate 'Select'}}"><span class="fas fa-angle-up"></span></button>
+            <button data-action="selectLinkTeams" class="btn btn-primary btn-sm btn-icon" type="button" tabindex="-1" title="{{translate 'Select'}}"><em class="icon ni ni-chevron-up-c"></em></button>
         </span>
     </div>
 </div>

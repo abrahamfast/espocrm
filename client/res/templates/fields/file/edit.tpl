@@ -2,7 +2,7 @@
     <div class="attachment-button{{#if id}} hidden{{/if}}">
         <div class="pull-left">
         <label class="attach-file-label" title="{{translate 'Attach File'}}">
-            <span class="btn btn-primary btn-icon"><span class="fas fa-paperclip"></span></span>
+            <span class="btn btn-primary btn-icon"><em class="icon ni ni-clip"></em></span>
             <input type="file" class="file pull-right" {{#if acceptAttribute}}accept="{{acceptAttribute}}"{{/if}}>
         </label>
         </div>
