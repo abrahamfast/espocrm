@@ -44,7 +44,7 @@ define('views/modals/auth2fa-required', 'views/modal', function (Dep) {
         templateContent: '<div class="complex-text">{{complexText viewObject.messageText}}</div>' +
             '<div class="button-container btn-group" style="margin-top: 30px">' +
             '<button class="btn btn-primary" data-action="proceed">{{translate \'Proceed\'}}</button>' +
-            '<button class="btn btn-default" data-action="logout">{{translate \'Log Out\'}}</button></div>'
+            '<button class="btn btn-primary" data-action="logout">{{translate \'Log Out\'}}</button></div>'
             ,
 
         setup: function () {

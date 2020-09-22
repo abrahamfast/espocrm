@@ -4,7 +4,7 @@
 
 <div class="row">
     <div class="col-sm-3">
-        <div class="panel panel-default">
+        <div class="panel panel-default card card-bordered">
             <div class="panel-body">
                 <ul class="list-unstyled" style="overflow-x: hidden;">
                 {{#each templateDataList}}

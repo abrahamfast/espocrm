@@ -1,6 +1,6 @@
 <div class="button-container">
     <button class="btn btn-primary" data-action="save">{{translate 'Save'}}</button>
-    <button class="btn btn-default" data-action="cancel">{{translate 'Cancel'}}</button>
+    <button class="btn btn-primary" data-action="cancel">{{translate 'Cancel'}}</button>
 </div>
 
 <div class="row">

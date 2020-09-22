@@ -131,7 +131,7 @@ define('views/main', 'view', function (Dep) {
         buildHeaderHtml: function (arr) {
             var a = [];
             arr.forEach(function (item) {
-                a.push('<div class="breadcrumb-item">' + item + '</div>');
+                a.push(item);
             }, this);
 
             return '<div class="header-breadcrumbs">' +

@@ -1,100 +1,105 @@
-<div class="navbar navbar-inverse" role="navigation">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-action="toggleCollapsable">
-            <span class="fas fa-bars"></span>
-        </button>
-        <div class="navbar-logo-container"><a class="navbar-brand nav-link" href="#"><img src="{{logoSrc}}" class="logo"></span></a></div>
-        <a href="javascript:" class="side-menu-button"><span class="fas fa-bars"></span></a>
-    </div>
-
-    <div class="navbar-collapse navbar-body">
-        <ul class="nav navbar-nav tabs">
-            {{#each tabDefsList}}
-            {{#unless isInMore}}
-            <li data-name="{{name}}" class="not-in-more tab">
-                <a href="{{link}}" class="{{aClassName}}"{{#if color}} style="border-color: {{color}}"{{/if}}>
-                    <span class="short-label"{{#if label}} title="{{label}}"{{/if}}{{#if color}} style="color: {{color}}"{{/if}}>
-                        {{#if iconClass}}
-                        <span class="{{iconClass}}"></span>
-                        {{else}}
-                        {{#if colorIconClass}}
-                        <span class="{{colorIconClass}}" style="color: {{color}}"></span>
-                        {{/if}}
-                        <span class="short-label-text">{{shortLabel}}</span>
-                        {{/if}}
-                    </span>
-                    {{#if label}}
-                    <span class="full-label">{{label}}</span>
-                    {{/if}}
-                    {{#if html}}{{{html}}}{{/if}}
-                </a>
-            </li>
-            {{/unless}}
-            {{/each}}
-            <li class="dropdown more">
-                <a id="nav-more-tabs-dropdown" class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fas fa-ellipsis-h more-icon"></span></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="nav-more-tabs-dropdown">
-                {{#each tabDefsList}}
-                {{#if isInMore}}
-                    <li data-name="{{name}}" class="in-more tab{{#if className}} {{className}}{{/if}}">
-                        <a href="{{link}}" class="{{aClassName}}"{{#if color}} style="border-color: {{color}}"{{/if}}>
-                            <span class="short-label"{{#if color}} style="color: {{color}}"{{/if}}>
-                                {{#if iconClass}}
-                                <span class="{{iconClass}}"></span>
-                                {{else}}
-                                {{#if colorIconClass}}
-                                <span class="{{colorIconClass}}" style="color: {{color}}"></span>
-                                {{/if}}
-                                <span class="short-label-text">&nbsp;</span>
-                                {{/if}}
-                            </span>
-                            {{#if label}}
-                            <span class="full-label">{{label}}</span>
-                            {{/if}}
-                            {{#if html}}{{{html}}}{{/if}}
+<div class="nk-apps-brand">
+    <a href="index.html" class="logo-link">
+        <img class="logo-light logo-img" src="images/logo-small.png" srcset="images/logo-small2x.png 2x" alt="logo" />
+        <img class="logo-dark logo-img" src="images/logo-dark-small.png" srcset="images/logo-dark-small2x.png 2x" alt="logo-dark" />
+    </a>
+</div>
+<div class="nk-sidebar-element">
+    <div class="nk-sidebar-body">
+        <div class="nk-sidebar-content" data-simplebar>
+            <div class="nk-sidebar-menu">
+                <ul class="nk-menu apps-menu">
+                    <li class="nk-menu-item">
+                        <a href="index.html" class="nk-menu-link" title="Analytics Dashboard">
+                            <span class="nk-menu-icon"><em class="icon ni ni-dashboard"></em></span>
                         </a>
                     </li>
-                {{/if}}
-                {{/each}}
+                    <li class="nk-menu-item">
+                        <a href="index-sales.html" class="nk-menu-link" title="Sales Dashboard">
+                            <span class="nk-menu-icon"><em class="icon ni ni-speed"></em></span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item">
+                        <a href="index-crypto.html" class="nk-menu-link" title="Crypto Dashboard">
+                            <span class="nk-menu-icon"><em class="icon ni ni-bitcoin-cash"></em></span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item">
+                        <a href="index-invest.html" class="nk-menu-link" title="Invest Dashboard">
+                            <span class="nk-menu-icon"><em class="icon ni ni-invest"></em></span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-hr"></li>
+                    <li class="nk-menu-item">
+                        <a href="apps/mailbox.html" class="nk-menu-link" title="Mailbox">
+                            <span class="nk-menu-icon"><em class="icon ni ni-inbox"></em></span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item">
+                        <a href="apps/messages.html" class="nk-menu-link" title="Messages">
+                            <span class="nk-menu-icon"><em class="icon ni ni-chat"></em></span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item">
+                        <a href="apps/file-manager.html" class="nk-menu-link" title="File Manager">
+                            <span class="nk-menu-icon"><em class="icon ni ni-folder"></em></span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-item">
+                        <a href="apps/chats.html" class="nk-menu-link" title="Chats">
+                            <span class="nk-menu-icon"><em class="icon ni ni-chat-circle"></em></span>
+                        </a>
+                    </li>
+                    <li class="nk-menu-hr"></li>
+                    <li class="nk-menu-item">
+                        <a href="components.html" class="nk-menu-link" title="Go to Components">
+                            <span class="nk-menu-icon"><em class="icon ni ni-layers"></em></span>
+                        </a>
+                    </li>
                 </ul>
-            </li>
-        </ul>
-        <div class="navbar-right-container">
-        <ul class="nav navbar-nav navbar-right">
-            <li class="nav navbar-nav navbar-form global-search-container">
-                {{{globalSearch}}}
-            </li>
-            <li class="dropdown notifications-badge-container">
-                {{{notificationsBadge}}}
-            </li>
-            {{#if enableQuickCreate}}
-            <li class="dropdown hidden-xs quick-create-container">
-                <a id="nav-quick-create-dropdown" class="dropdown-toggle" data-toggle="dropdown" href="#" title="{{translate 'Create'}}"><i class="fas fa-plus"></i></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="nav-quick-create-dropdown">
-                    <li class="dropdown-header">{{translate 'Create'}}</li>
-                    {{#each quickCreateList}}
-                    <li><a href="#{{./this}}/create" data-name="{{./this}}" data-action="quick-create">{{translate this category='scopeNames'}}</a></li>
-                    {{/each}}
+            </div>
+            <div class="nk-sidebar-footer">
+                <ul class="nk-menu nk-menu-md">
+                    <li class="nk-menu-item">
+                        <a href="#" class="nk-menu-link" title="Settings">
+                            <span class="nk-menu-icon"><em class="icon ni ni-setting"></em></span>
+                        </a>
+                    </li>
                 </ul>
-            </li>
-            {{/if}}
-            <li class="dropdown menu-container">
-                <a id="nav-menu-dropdown" class="dropdown-toggle" data-toggle="dropdown" href="#" title="{{translate 'Menu'}}"><span class="fas fa-ellipsis-v"></span></a>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="nav-menu-dropdown">
-                    {{#each menuDataList}}
-                        {{#unless divider}}
-                            <li><a href="{{#if link}}{{link}}{{else}}javascript:{{/if}}" class="nav-link{{#if action}} action{{/if}}"{{#if action}} data-action="{{action}}"{{/if}}>{{#if html}}{{{html}}}{{else}}{{label}}{{/if}}</a></li>
-                        {{else}}
-                            <li class="divider"></li>
-                        {{/unless}}
-                    {{/each}}
-                </ul>
-            </li>
-        </ul>
+            </div>
         </div>
-        <a class="minimizer" href="javascript:">
-            <span class="fas fa-chevron-right right"></span>
-            <span class="fas fa-chevron-left left"></span>
-        </a>
+        <div class="nk-sidebar-profile nk-sidebar-profile-fixed dropdown">
+            <a href="#" data-toggle="dropdown" data-offset="50,-60">
+                <div class="user-avatar"><span>AB</span></div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-md ml-4">
+                <div class="dropdown-inner user-card-wrap d-none d-md-block">
+                    <div class="user-card">
+                        <div class="user-avatar"><span>AB</span></div>
+                        <div class="user-info"><span class="lead-text">Abu Bin Ishtiyak</span><span class="sub-text text-soft">info@softnio.com</span></div>
+                    </div>
+                </div>
+                <div class="dropdown-inner">
+                    <ul class="link-list">
+                        <li>
+                            <a href="user-profile-regular.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a>
+                        </li>
+                        <li>
+                            <a href="user-profile-setting.html"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a>
+                        </li>
+                        <li>
+                            <a href="user-profile-activity.html"><em class="icon ni ni-activity-alt"></em><span>Login Activity</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="dropdown-inner">
+                    <ul class="link-list">
+                        <li>
+                            <a href="#"><em class="icon ni ni-signout"></em><span>Sign out</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

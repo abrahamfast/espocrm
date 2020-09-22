@@ -625,7 +625,7 @@ define('views/record/search', 'view', function (Dep) {
 
             this.currentFilterLabelList.push(filterLabel);
 
-            this.$filtersButton.removeClass('btn-default')
+            this.$filtersButton.removeClass('btn-primary')
                                .removeClass('btn-primary')
                                .removeClass('btn-danger')
                                .removeClass('btn-success')

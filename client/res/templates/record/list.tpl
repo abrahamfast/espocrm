@@ -11,7 +11,7 @@
     {{#if displayActionsButtonGroup}}
     <div class="btn-group actions">
         {{#if massActionList}}
-        <button type="button" class="btn btn-default dropdown-toggle actions-button hidden" data-toggle="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle actions-button hidden" data-toggle="dropdown">
         {{translate 'Actions'}}
         <span class="caret"></span>
         </button>
@@ -60,7 +60,7 @@
 
     <div class="sticked-bar hidden">
         <div class="btn-group">
-            <button type="button" class="btn btn-default dropdown-toggle actions-button hidden" data-toggle="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle actions-button hidden" data-toggle="dropdown">
             {{translate 'Actions'}}
             <span class="caret"></span>
             </button>
@@ -132,7 +132,7 @@
     {{#unless paginationEnabled}}
     {{#if showMoreEnabled}}
     <div class="show-more{{#unless showMoreActive}} hide{{/unless}}">
-        <a type="button" href="javascript:" class="btn btn-default btn-block" data-action="showMore" {{#if showCount}}title="{{translate 'Total'}}: {{totalCountFormatted}}"{{/if}}>
+        <a type="button" href="javascript:" class="btn btn-primary btn-block" data-action="showMore" {{#if showCount}}title="{{translate 'Total'}}: {{totalCountFormatted}}"{{/if}}>
             {{#if showCount}}
             <div class="pull-right text-muted more-count">{{moreCountFormatted}}</div>
             {{/if}}

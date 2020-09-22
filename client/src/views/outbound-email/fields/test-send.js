@@ -31,7 +31,7 @@ define('views/outbound-email/fields/test-send', 'views/fields/base', function (D
     return Dep.extend({
 
         templateContent:
-            '<button class="btn btn-default hidden" data-action="sendTestEmail">'+
+            '<button class="btn btn-primary hidden" data-action="sendTestEmail">'+
             '{{translate \'Send Test Email\' scope=\'Email\'}}</button>',
 
         events: {

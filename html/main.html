@@ -1,8 +1,17 @@
 <!doctype html>
 <html>
     <head>
-        <title>{{applicationName}}</title>{{scriptsHtml}}
-        <link href="{{basePath}}{{stylesheet}}?r={{cacheTimestamp}}" rel="stylesheet" id='main-stylesheet'>{{additionalStyleSheetsHtml}}{{linksHtml}}
+        <title>{{applicationName}}</title>
+        <link rel="stylesheet" href="/client/assets/css/dashlite-ver=1.9.2.css">
+        <link id="skin-default" rel="stylesheet" href="/client/assets/css/dashlite-ver=1.9.2.css">
+
+        <script src="/client/assets/js/bundle-ver=1.9.2.js"></script>
+        {{scriptsHtml}}
+        <link href="{{basePath}}{{stylesheet}}?r={{cacheTimestamp}}" rel="stylesheet" id='main-stylesheet'>
+
+        {{additionalStyleSheetsHtml}}{{linksHtml}}
+
+
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
         <meta content="utf-8" http-equiv="encoding">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -30,10 +39,14 @@
             });
         </script>
     </head>
-    <body>
+    <body class="nk-body npc-default has-apps-sidebar has-sidebar">
         <div class="container content"></div>
         <footer>
             <p class="credit small">&copy; 2020 <a href="https://www.espocrm.com" title="Powered by EspoCRM" alt="Visit official EspoCRM website">EspoCRM</a></p>
         </footer>
+
+
+
+        <script src="/client/assets/js/scripts-ver=1.9.2.js"></script>
     </body>
 </html>

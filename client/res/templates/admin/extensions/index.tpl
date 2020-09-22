@@ -2,8 +2,8 @@
 <span class="breadcrumb-separator"><span class="chevron-right"></span></span>
 {{translate 'Extensions' scope='Admin'}}</h3></div>
 
-<div class="panel panel-default upload">
-    <div class="panel-heading">
+<div class="panel panel-default card card-bordered upload">
+    <div class="panel-heading card-head">
         <h4 class="panel-title">{{translate 'selectExtensionPackage' category='messages' scope='Admin'}}</h4>
     </div>
     <div class="panel-body">

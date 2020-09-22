@@ -54,7 +54,7 @@
     <div class="button-container">
         <div class="btn-group">
             <button class="btn btn-danger" data-action="merge">{{translate 'Merge'}}</button>
-            <button class="btn btn-default" data-action="cancel">{{translate 'Cancel'}}</button>
+            <button class="btn btn-primary" data-action="cancel">{{translate 'Cancel'}}</button>
         </div>
     </div>
 </div>

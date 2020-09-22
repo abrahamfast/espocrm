@@ -1,7 +1,7 @@
 <div class="container content">
     <div class="col-md-4 col-md-offset-3 col-sm-8 col-sm-offset-2">
-        <div class="panel panel-default password-change">
-            <div class="panel-heading">
+        <div class="panel panel-default card card-bordered password-change">
+            <div class="panel-heading card-head">
                 <h4 class="panel-title">{{translate 'Change Password' scope='User'}}</h4>
             </div>
             <div class="panel-body">

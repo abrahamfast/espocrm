@@ -1,5 +1,5 @@
-<div class="panel panel-default">
-    <div class="panel-heading">
+<div class="panel panel-default card card-bordered">
+    <div class="panel-heading card-head">
     <div class="link-group">
         <a href="javascript:" class="close-link" data-action="closePanel"><span class="fas fa-times"></span></a>
     </div>

@@ -30,7 +30,7 @@ define('views/user/fields/generate-password', 'views/fields/base', function (Dep
 
     return Dep.extend({
 
-        _template: '<button type="button" class="btn btn-default" data-action="generatePassword">{{translate \'Generate\' scope=\'User\'}}</button>',
+        _template: '<button type="button" class="btn btn-primary" data-action="generatePassword">{{translate \'Generate\' scope=\'User\'}}</button>',
 
         events: {
             'click [data-action="generatePassword"]': function () {

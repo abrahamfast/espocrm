@@ -1,6 +1,6 @@
 <div class="container content">
     <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
-    <div id="login" class="panel panel-default">
+    <div id="login" class="panel panel-default card card-bordered">
         <div class="panel-body">
             <div>
                 <p>{{message}}</p>

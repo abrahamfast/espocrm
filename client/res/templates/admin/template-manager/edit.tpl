@@ -6,8 +6,8 @@
 <div class="button-container">
     <div class="btn-group">
         <button class="btn btn-primary" data-action="save">{{translate 'Save'}}</button>
-        <button class="btn btn-default" data-action="cancel">{{translate 'Cancel'}}</button>
-        <button class="btn btn-default" data-action="resetToDefault">{{translate 'Reset to Default' scope='Admin'}}</button>
+        <button class="btn btn-primary" data-action="cancel">{{translate 'Cancel'}}</button>
+        <button class="btn btn-primary" data-action="resetToDefault">{{translate 'Reset to Default' scope='Admin'}}</button>
     </div>
 </div>
 

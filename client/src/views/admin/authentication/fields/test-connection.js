@@ -30,7 +30,7 @@ Espo.define('views/admin/authentication/fields/test-connection', 'views/fields/b
 
     return Dep.extend({
 
-        _template: '<button class="btn btn-default" data-action="testConnection">{{translate \'Test Connection\' scope=\'Settings\'}}</button>',
+        _template: '<button class="btn btn-primary" data-action="testConnection">{{translate \'Test Connection\' scope=\'Settings\'}}</button>',
 
         events: {
             'click [data-action="testConnection"]': function () {

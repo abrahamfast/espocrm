@@ -10,7 +10,7 @@
     {{#if checkboxes}}
     {{#if massActionList}}
     <div class="btn-group actions">
-        <button type="button" class="btn btn-default btn-sm dropdown-toggle actions-button" data-toggle="dropdown" disabled>
+        <button type="button" class="btn btn-primary btn-sm dropdown-toggle actions-button" data-toggle="dropdown" disabled>
         {{translate 'Actions'}}
         <span class="caret"></span>
         </button>
@@ -40,7 +40,7 @@
     {{#unless paginationEnabled}}
     {{#if showMoreEnabled}}
     <div class="show-more{{#unless showMoreActive}} hide{{/unless}}">
-        <a type="button" href="javascript:" class="btn btn-default btn-block"  data-action="showMore" {{#if showCount}}title="{{translate 'Total'}}: {{totalCountFormatted}}"{{/if}}>
+        <a type="button" href="javascript:" class="btn btn-primary btn-block"  data-action="showMore" {{#if showCount}}title="{{translate 'Total'}}: {{totalCountFormatted}}"{{/if}}>
             {{#if showCount}}
             <div class="pull-right text-muted more-count">{{moreCountFormatted}}</div>
             {{/if}}

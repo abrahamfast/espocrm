@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div class="panel panel-default card card-bordered">
     <div class="panel-body">
         {{#each layoutDataList}}
         <div>

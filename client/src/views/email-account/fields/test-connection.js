@@ -33,7 +33,7 @@ define('views/email-account/fields/test-connection', 'views/fields/base', functi
         readOnly: true,
 
         templateContent:
-            '<button class="btn btn-default disabled" data-action="testConnection">'+
+            '<button class="btn btn-primary disabled" data-action="testConnection">'+
             '{{translate \'Test Connection\' scope=\'EmailAccount\'}}</button>',
 
         url: 'EmailAccount/action/testConnection',

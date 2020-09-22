@@ -17,8 +17,8 @@
     </div>
 </div>
 
-<div class="panel panel-default upload">
-    <div class="panel-heading">
+<div class="panel panel-default card card-bordered upload">
+    <div class="panel-heading card-head">
         <h4 class="panel-title">{{translate 'selectUpgradePackage' scope='Admin' category="messages"}}</h4>
     </div>
     <div class="panel-body">

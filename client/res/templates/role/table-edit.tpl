@@ -1,6 +1,6 @@
 
-<div class="panel panel-default">
-    <div class="panel-heading">
+<div class="panel panel-default card card-bordered">
+    <div class="panel-heading card-head">
         <h4 class="panel-title">{{translate 'Scope Level' scope='Role'}}</h4>
     </div>
     <div class="panel-body">
@@ -57,8 +57,8 @@
 </div>
 
 {{#if fieldTableDataList.length}}
-<div class="panel panel-default">
-    <div class="panel-heading">
+<div class="panel panel-default card card-bordered">
+    <div class="panel-heading card-head">
         <h4 class="panel-title">{{translate 'Field Level' scope='Role'}}</h4>
     </div>
     <div class="panel-body">

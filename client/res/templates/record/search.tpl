@@ -3,7 +3,7 @@
     <div class="form-group{{#if isWide}} col-lg-7{{/if}} col-md-8 col-sm-9">
         <div class="input-group">
             <div class="input-group-btn left-dropdown{{#unless leftDropdown}} hidden{{/unless}}">
-                <button type="button" class="btn btn-default dropdown-toggle filters-button" title="{{translate 'Filter'}}" data-toggle="dropdown" tabindex="-1">
+                <button type="button" class="btn btn-primary dropdown-toggle filters-button" title="{{translate 'Filter'}}" data-toggle="dropdown" tabindex="-1">
                     <span class="filters-label"></span>
                     <span class="caret"></span>
                 </button>
@@ -29,7 +29,7 @@
             </div>
             {{#unless textFilterDisabled}}<input type="text" class="form-control text-filter" data-name="textFilter" value="{{textFilter}}" tabindex="1" autocomplete="espo-text-search">{{/unless}}
             <div class="input-group-btn">
-                <button type="button" class="btn btn-default search btn-icon btn-icon-x-wide" data-action="search" title="{{translate 'Search'}}">
+                <button type="button" class="btn btn-primary search btn-icon btn-icon-x-wide" data-action="search" title="{{translate 'Search'}}">
                     <span class="fa fa-search"></span>
                 </button>
                 <button type="button" class="btn btn-text btn-icon-wide dropdown-toggle add-filter-button" data-toggle="dropdown" tabindex="-1">

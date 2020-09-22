@@ -4,8 +4,8 @@
     <div id="layouts-menu" class="col-sm-3">
         <div class="panel-group" id="layout-accordion">
         {{#each layoutScopeDataList}}
-            <div class="panel panel-default">
-                <div class="panel-heading">
+            <div class="panel panel-default card card-bordered">
+                <div class="panel-heading card-head">
                     <a class="accordion-toggle" data-scope="{{scope}}" href="{{url}}">{{translate scope category='scopeNamesPlural'}}</a>
                 </div>
                 <div class="panel-collapse collapse{{#ifEqual scope ../scope}} in{{/ifEqual}}" data-scope="{{scope}}">

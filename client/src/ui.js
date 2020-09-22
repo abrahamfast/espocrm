@@ -271,7 +271,7 @@ define('ui', [], function () {
                 });
 
                 rightPart += '<div class="btn-group'+ ((visibleCount === 0) ? ' hidden' : '') +'">';
-                rightPart += '<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">';
+                rightPart += '<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">';
                 rightPart += '<span class="fas fa-ellipsis-h"></span>'
                 rightPart += '</button>'
 

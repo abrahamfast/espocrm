@@ -4,7 +4,7 @@
 
 <div class="row">
     <div class="col-md-8">
-        <div class="panel panel-default">
+        <div class="panel panel-default card card-bordered">
             <div class="panel-body">
                 <h5>Version {{version}}</h5>
                 <p>

@@ -1,7 +1,7 @@
 <h4>{{translate 'Step 1' scope='Import'}}</h4>
 
-        <div class="panel panel-default">
-            <div class="panel-heading"><h4 class="panel-title">{{translate 'What to Import?' scope='Import'}}</h4></div>
+        <div class="panel panel-default card card-bordered">
+            <div class="panel-heading card-head"><h4 class="panel-title">{{translate 'What to Import?' scope='Import'}}</h4></div>
             <div class="panel-body panel-body-form">
                 <div class="row">
                     <div class="col-sm-4 form-group cell">
@@ -27,8 +27,8 @@
             </div>
         </div>
 
-    <div class="panel panel-default">
-        <div class="panel-heading"><h4 class="panel-title">{{translate 'Properties' scope='Import'}}</h4></div>
+    <div class="panel panel-default card card-bordered">
+        <div class="panel-heading card-head"><h4 class="panel-title">{{translate 'Properties' scope='Import'}}</h4></div>
         <div class="panel-body panel-body-form">
             <div id="import-properties">
                 <div class="row">
@@ -134,8 +134,8 @@
         </div>
     </div>
 
-    <div class="panel panel-default">
-        <div class="panel-heading"><h4 class="panel-title">{{translate 'Preview' scope='Import'}}</h4></div>
+    <div class="panel panel-default card card-bordered">
+        <div class="panel-heading card-head"><h4 class="panel-title">{{translate 'Preview' scope='Import'}}</h4></div>
         <div class="panel-body">
             <div id="import-preview" style="overflow-x: auto; overflow-y: hidden;">
             {{translate 'No Data'}}

@@ -11,7 +11,7 @@
         <div class="input-group">
             <input class="note-image-url form-control note-form-control note-input" type="text" data-name="url">
             <span class="input-group-btn">
-                <button class="btn btn-default disabled action" disabled="disabled" data-name="insert" data-action="insert">{{translate 'Insert'}}</button>
+                <button class="btn btn-primary disabled action" disabled="disabled" data-name="insert" data-action="insert">{{translate 'Insert'}}</button>
             </span>
         </div>
     </div>

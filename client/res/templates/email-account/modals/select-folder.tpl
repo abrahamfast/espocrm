@@ -5,7 +5,7 @@
 {{#each folders}}
     <li class="list-group-item clearfix">
         {{./this}}
-        <button class="btn btn-default pull-right" data-value="{{./this}}" data-action="select">{{translate 'Select'}}</button>
+        <button class="btn btn-primary pull-right" data-value="{{./this}}" data-action="select">{{translate 'Select'}}</button>
     </li>
 {{/each}}
 </ul>

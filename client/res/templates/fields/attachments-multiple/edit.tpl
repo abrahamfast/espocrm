@@ -3,7 +3,7 @@
         {{#unless uploadFromFileSystemDisabled}}
         <div class="pull-left">
             <label class="attach-file-label" title="{{translate 'Attach File'}}">
-                <span class="btn btn-default btn-icon"><span class="fas fa-paperclip"></span></span>
+                <span class="btn btn-primary btn-icon"><span class="fas fa-paperclip"></span></span>
                 <input type="file" class="file pull-right" multiple {{#if acceptAttribute}}accept="{{acceptAttribute}}"{{/if}}>
             </label>
         </div>
@@ -11,7 +11,7 @@
 
         {{#if sourceList.length}}
         <div class="pull-left dropdown">
-            <button class="btn btn-default btn-icon dropdown-toggle" type="button" data-toggle="dropdown">
+            <button class="btn btn-primary btn-icon dropdown-toggle" type="button" data-toggle="dropdown">
                 <span class="fas fa-file"></span>
             </button>
             <ul class="dropdown-menu" role="menu">

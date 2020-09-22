@@ -4,7 +4,7 @@
     <% hasHiddenPanel = panel.hidden || hasHiddenPanel; %>
     <div class="panel panel-<%= panel.style %><% if (panel.name) { %>{{#if hiddenPanels.<%= panel.name %>}} hidden{{/if}}<% } %>"<% if (panel.name) print(' data-name="'+panel.name+'"') %>>
         <% if (panel.label) { %>
-        <div class="panel-heading"><h4 class="panel-title"><%= panel.label %></h4></div>
+        <div class="panel-heading card-head"><h4 class="panel-title"><%= panel.label %></h4></div>
         <% } %>
         <div class="panel-body panel-body-form">
 
@@ -165,7 +165,7 @@
 <%
 if (hasHiddenPanel) {
 %>
-<div class="panel panel-default panels-show-more-delimiter" data-name="showMoreDelimiter">
+<div class="panel panel-default card card-bordered panels-show-more-delimiter" data-name="showMoreDelimiter">
     <a href="javascript:" data-action="showMoreDetailPanels" title="{{translate 'Show more'}}">
         <span class="fas fa-ellipsis-h fa-lg"></span>
     </a>

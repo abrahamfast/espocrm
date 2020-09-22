@@ -41,6 +41,14 @@ define('views/site/master', 'view', function (Dep) {
                 id: 'main',
                 view: false,
             },
+            nkheader: {
+                id: 'nkheader',
+                view: 'views/site/nkheader'
+            },
+            nksidebar: {
+                id: 'nksidebar',
+                view: 'views/site/nksidebar'
+            },
             footer: {
                 el: 'body > footer',
                 view: 'views/site/footer'
