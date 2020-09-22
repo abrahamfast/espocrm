@@ -27,16 +27,17 @@
                     {{/each}}
                 </ul>
             </div>
-            {{#unless textFilterDisabled}}<input type="text" class="form-control text-filter" data-name="textFilter" value="{{textFilter}}" tabindex="1" autocomplete="espo-text-search">{{/unless}}
+            {{#unless textFilterDisabled}}
+            <input type="text" class="form-control text-filter" data-name="textFilter" value="{{textFilter}}" tabindex="1" autocomplete="espo-text-search">{{/unless}}
             <div class="input-group-btn">
-                <button type="button" class="btn btn-primary search btn-icon btn-icon-x-wide" data-action="search" title="{{translate 'Search'}}">
-                    <span class="fa fa-search"></span>
+                <button type="button" class="btn btn-dim btn-primary search btn-icon btn-icon-x-wide" data-action="search" title="{{translate 'Search'}}">
+                    <em class="icon ni ni-search"></em>
                 </button>
-                <button type="button" class="btn btn-text btn-icon-wide dropdown-toggle add-filter-button" data-toggle="dropdown" tabindex="-1">
-                    <span class="fas fa-ellipsis-v"></span>
+                <button type="button" class="btn btn-dim btn-primary dropdown-toggle add-filter-button" data-toggle="dropdown" tabindex="-1">
+                    <em class="icon ni ni-filter"></em>
                 </button>
-                <button type="button" class="btn btn-text btn-icon-wide" data-action="reset" title="{{translate 'Reset'}}" style="visibility: hidden;">
-                    <span class="fas fa-times"></span>
+                <button type="button" class="btn btn-dim btn-primary" data-action="reset" title="{{translate 'Reset'}}" style="visibility: hidden;">
+                    <em class="icon ni ni-undo"></em>
                 </button>
                 <ul class="dropdown-menu pull-right filter-list">
                     <li class="dropdown-header">{{translate 'Add Field'}}</li>

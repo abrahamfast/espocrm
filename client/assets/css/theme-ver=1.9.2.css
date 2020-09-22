@@ -9,3 +9,6 @@
 .modal-backdrop {
     z-index: 2040 !important;
 }
+.hidden, .hide {
+    display: none;
+}

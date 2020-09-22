@@ -9,7 +9,7 @@
     {{/if}}
 
     {{#if displayActionsButtonGroup}}
-    <div class="btn-group actions">
+    <div class="btn-group">
         {{#if massActionList}}
         <button type="button" class="btn btn-primary dropdown-toggle actions-button hidden" data-toggle="dropdown">
         {{translate 'Actions'}}
@@ -89,11 +89,12 @@
 </div>
 {{/if}}
 
-<div class="list{{#if tableMinWidth}} scrollable{{/if}}" data-scope="{{scope}}">
-    <table class="table"{{#if tableMinWidth}} style="min-width: {{tableMinWidth}}px;"{{/if}}>
+<div class="list nk-block nk-block-lg{{#if tableMinWidth}} scrollable{{/if}}" data-scope="{{scope}}">
+<div class="card card-bordered card-preview">
+    <table class="table table-orders"{{#if tableMinWidth}} style="min-width: {{tableMinWidth}}px;"{{/if}}>
         {{#if header}}
-        <thead>
-            <tr>
+        <thead class="tb-odr-head">
+            <tr class="tb-odr-item">
                 {{#if checkboxes}}
                 <th width="{{checkboxColumnWidth}}" data-name="r-checkbox">
                     <span class="select-all-container"><input type="checkbox" class="select-all"></span>
@@ -129,6 +130,7 @@
         {{/each}}
         </tbody>
     </table>
+    </div>
     {{#unless paginationEnabled}}
     {{#if showMoreEnabled}}
     <div class="show-more{{#unless showMoreActive}} hide{{/unless}}">
