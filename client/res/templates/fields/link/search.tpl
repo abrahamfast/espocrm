@@ -5,8 +5,8 @@
 	<div class="input-group">
 	    <input class="form-control input-sm" type="text" data-name="{{nameName}}" value="{{searchData.nameValue}}" autocomplete="espo-{{name}}" placeholder="{{translate 'Select'}}">
 	    <span class="input-group-btn">
-	        <button type="button" class="btn btn-sm btn-primary btn-icon" data-action="selectLink" tabindex="-1" title="{{translate 'Select'}}"><i class="fas fa-angle-up"></i></button>
-	        <button type="button" class="btn btn-sm btn-primary btn-icon" data-action="clearLink" tabindex="-1"><i class="fas fa-times"></i></button>
+	        <button type="button" class="btn btn-sm btn-primary btn-icon" data-action="selectLink" tabindex="-1" title="{{translate 'Select'}}"><em class="icon ni ni-chevron-up-c"></em></button>
+	        <button type="button" class="btn btn-sm btn-primary btn-icon" data-action="clearLink" tabindex="-1"><em class="icon ni ni-minus-c"></em></button>
 	    </span>
 	</div>
 	<input type="hidden" data-name="{{idName}}" value="{{searchData.idValue}}">

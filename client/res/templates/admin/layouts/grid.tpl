@@ -31,7 +31,7 @@
                         {{translate this scope=../scope category='fields'}}
                     </div>
                     <div class="right" style="width: 14px;">
-                        <a href="javascript:" data-action="removeField" class="remove-field"><i class="fas fa-times"></i></a>
+                        <a href="javascript:" data-action="removeField" class="remove-field"><em class="icon ni ni-minus-c"></em></a>
                     </div>
                 </li>
                 {{/each}}
@@ -43,7 +43,7 @@
 <div id="layout-row-tpl" style="display: none;">
     <li data-cell-count="{{columnCount}}">
         <div class="row-actions clear-fix">
-            <a href="javascript:" data-action="removeRow" class="remove-row"><i class="fas fa-times"></i></a>
+            <a href="javascript:" data-action="removeRow" class="remove-row"><em class="icon ni ni-minus-c"></em></a>
             <a href="javascript:" data-action="plusCell" class="add-cell"><i class="fas fa-plus"></i></a>
         </div>
         <ul class="cells" data-cell-count="{{columnCount}}">

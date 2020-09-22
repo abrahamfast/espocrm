@@ -2,7 +2,7 @@
 
 <% _.each(layout, function (panel, columnNumber) { %>
     <% hasHiddenPanel = panel.hidden || hasHiddenPanel; %>
-    <div class="panel panel-<%= panel.style %><% if (panel.name) { %>{{#if hiddenPanels.<%= panel.name %>}} hidden{{/if}}<% } %>"<% if (panel.name) print(' data-name="'+panel.name+'"') %>>
+    <div class="card-inner h-100 panel panel-<%= panel.style %><% if (panel.name) { %>{{#if hiddenPanels.<%= panel.name %>}} hidden{{/if}}<% } %>"<% if (panel.name) print(' data-name="'+panel.name+'"') %>>
         <% if (panel.label) { %>
         <div class="panel-heading card-head"><h4 class="panel-title"><%= panel.label %></h4></div>
         <% } %>
@@ -63,7 +63,7 @@
                             spanClass = 'col-sm-12';
                         }
                     %>
-                    <div class="cell <%= spanClass %> form-group<% if (cell.field) { %>{{#if hiddenFields.<%= cell.field %>}} hidden-cell{{/if}}<% } %>" data-name="<%= cell.field %>">
+                    <div class="_cell <%= spanClass %> form-group<% if (cell.field) { %>{{#if hiddenFields.<%= cell.field %>}} hidden-cell{{/if}}<% } %>" data-name="<%= cell.field %>">
                         <% if (!cell.noLabel) { %><label class="control-label<% if (cell.field) { %>{{#if hiddenFields.<%= cell.field %>}} hidden{{/if}}<% } %>" data-name="<%= cell.field %>"><span class="label-text"><%
                             if ('customLabel' in cell) {
                                 print (cell.customLabel);

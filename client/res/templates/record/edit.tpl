@@ -27,11 +27,11 @@
 
     <div class="record-grid{{#if isWide}} record-grid-wide{{/if}}{{#if isSmall}} record-grid-small{{/if}}">
         <div class="left">
-            <div class="middle">{{{middle}}}</div>
-            <div class="extra">{{{extra}}}</div>
-            <div class="bottom">{{{bottom}}}</div>
+            <div class="card card-preview middle">{{{middle}}}</div>
+            <div class="card card-preview extra">{{{extra}}}</div>
+            <div class="card card-preview bottom">{{{bottom}}}</div>
         </div>
-        <div class="side">
+        <div class="side card card-preview">
         {{{side}}}
         </div>
     </div>

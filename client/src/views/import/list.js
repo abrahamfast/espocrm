@@ -36,7 +36,7 @@ define('views/import/list', 'views/list', function (Dep) {
             Dep.prototype.setup.call(this);
 
             this.menu.buttons.unshift({
-                html: '<span class="fas fa-plus fa-sm"></span> ' + this.translate('New Import', 'labels', 'Import'),
+                html: '<em class="icon ni ni-plus-c"></em> ' + this.translate('New Import', 'labels', 'Import'),
                 link: '#Import',
                 acl: 'edit',
             });
