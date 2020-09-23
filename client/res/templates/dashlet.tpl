@@ -1,4 +1,4 @@
-<div id="dashlet-{{id}}" class="panel panel-default card card-bordered dashlet{{#if isDoubleHeight}} double-height{{/if}}" data-name="{{name}}" data-id="{{id}}">
+<div id="dashlet-{{id}}" class="card card-bordered dashlet{{#if isDoubleHeight}} double-height{{/if}}" data-name="{{name}}" data-id="{{id}}">
     <div class="panel-heading card-head">
         <div class="btn-group pull-right">
             {{#each buttonList}}
