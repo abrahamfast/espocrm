@@ -8,7 +8,7 @@
                     "label": "List View",
                     "link": "#{entityType}/list",
                     "acl": "read",
-                    "style": "default"
+                    "style": "secondary"
                 }
             ]
         },
@@ -18,7 +18,7 @@
                     "label": "Tree View",
                     "link": "#{entityType}",
                     "acl": "read",
-                    "style": "default"
+                    "style": "secondary"
                 }
             ]
         }

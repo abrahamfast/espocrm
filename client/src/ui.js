@@ -98,7 +98,7 @@ define('ui', [], function () {
         var footerHtml = this.getFooterHtml();
 
         if (footerHtml !== '') {
-            footerHtml = '<footer class="modal-footer">' + footerHtml + '</footer>';
+            footerHtml = '<footer class="modal-footer bg-light">' + footerHtml + '</footer>';
         }
 
         if (this.options.footerAtTheTop) {
@@ -107,7 +107,7 @@ define('ui', [], function () {
             this.contents += body + footerHtml;
         }
 
-        this.contents = '<div class="modal-dialog"><div class="modal-content">' + this.contents + '</div></div>'
+        this.contents = '<div class="modal-dialog modal-lg"><div class="modal-content">' + this.contents + '</div></div>'
 
         $('<div />').attr('id', this.id)
           .attr('class', this.className + ' modal')

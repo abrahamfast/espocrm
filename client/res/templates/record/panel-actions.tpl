@@ -1,10 +1,10 @@
 {{#each buttonList}}
-<button type="button" class="btn btn-{{#if ../defs.style}}{{../defs.style}}{{else}}default{{/if}} btn-sm action{{#if hidden}} hidden{{/if}}" data-action="{{action}}" data-panel="{{../defs.name}}" {{#each data}} data-{{hyphen @key}}="{{./this}}"{{/each}} title="{{#if title}}{{translate title scope=../../scope}}{{/if}}">{{#if html}}{{{html}}}{{else}}{{translate label scope=../../../scope}}{{/if}}</button>
+<button type="button" class="btn btn-{{#if ../defs.style}}{{../defs.style}}{{else}}primary{{/if}} btn-sm action{{#if hidden}} hidden{{/if}}" data-action="{{action}}" data-panel="{{../defs.name}}" {{#each data}} data-{{hyphen @key}}="{{./this}}"{{/each}} title="{{#if title}}{{translate title scope=../../scope}}{{/if}}">{{#if html}}{{{html}}}{{else}}{{translate label scope=../../../scope}}{{/if}}</button>
 {{/each}}
 
 {{#if actionList}}
-    <button type="button" class="btn btn-{{#if defs.style}}{{defs.style}}{{else}}default{{/if}} btn-sm dropdown-toggle" data-toggle="dropdown">
-        <span class="fas fa-ellipsis-h"></span>
+    <button type="button" class="btn btn-{{#if defs.style}}{{defs.style}}{{else}}primary{{/if}} btn-sm dropdown-toggle" data-toggle="dropdown">
+        <em class="icon ni ni-more-h"></em>
     </button>
     <ul class="dropdown-menu">
         {{#each actionList}}

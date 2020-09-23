@@ -12,7 +12,7 @@
         {{#if sourceList.length}}
         <div class="pull-left dropdown">
             <button class="btn btn-primary btn-icon dropdown-toggle" type="button" data-toggle="dropdown">
-                <span class="fas fa-file"></span>
+                <em class="icon ni ni-file-plus-fill"></em>
             </button>
             <ul class="dropdown-menu" role="menu">
             {{#each sourceList}}

@@ -18,6 +18,6 @@
 <div class="button-container margin-top">
     <div class="btn-group">
         <button class="btn btn-primary" data-action="convert">{{translate 'Convert' scope='Lead'}}</button>
-        <button class="btn btn-default" data-action="cancel">{{translate 'Cancel'}}</button>
+        <button class="btn btn-secondary" data-action="cancel">{{translate 'Cancel'}}</button>
     </div>
 </div>

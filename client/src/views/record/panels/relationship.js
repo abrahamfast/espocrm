@@ -101,7 +101,7 @@ define('views/record/panels/relationship', ['views/record/panels/bottom', 'searc
                         action: this.defs.createAction || 'createRelated',
                         link: this.link,
                         acl: 'edit',
-                        html: '<span class="fas fa-plus"></span>',
+                        html: '<em class="icon ni ni-plus-fill-c"></em>',
                         data: {
                             link: this.link,
                         }

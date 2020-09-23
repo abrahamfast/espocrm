@@ -8,13 +8,13 @@
                     "label": "List View",
                     "link": "#KnowledgeBaseCategory\/list",
                     "acl": "read",
-                    "style": "default"
+                    "style": "secondary"
                 },
                 {
                     "label": "Articles",
                     "link": "#KnowledgeBaseArticle",
                     "acl": "read",
-                    "style": "default",
+                    "style": "secondary",
                     "aclScope": "KnowledgeBaseArticle"
                 }
             ]
@@ -25,13 +25,13 @@
                     "label": "Tree View",
                     "link": "#KnowledgeBaseCategory",
                     "acl": "read",
-                    "style": "default"
+                    "style": "secondary"
                 },
                 {
                     "label": "Articles",
                     "link": "#KnowledgeBaseArticle",
                     "acl": "read",
-                    "style": "default",
+                    "style": "secondary",
                     "aclScope": "KnowledgeBaseArticle"
                 }
             ]

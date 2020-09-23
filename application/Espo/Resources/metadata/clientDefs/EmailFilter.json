@@ -16,7 +16,7 @@
                 {
                     "label": "Emails",
                     "link": "#Email",
-                    "style": "default",
+                    "style": "secondary",
                     "aclScope": "Email"
                 }
             ]

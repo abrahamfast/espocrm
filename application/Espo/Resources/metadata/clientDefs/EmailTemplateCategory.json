@@ -8,14 +8,14 @@
                     "label": "List View",
                     "link": "#EmailTemplateCategory\/list",
                     "acl": "read",
-                    "style": "default"
+                    "style": "secondary"
                 },
                 {
                     "label": "Email Templates",
                     "link": "#EmailTemplate",
                     "acl": "read",
                     "aclScope": "EmailTemplate",
-                    "style": "default"
+                    "style": "secondary"
                 }
             ]
         },
@@ -25,14 +25,14 @@
                     "label": "Tree View",
                     "link": "#EmailTemplateCategory",
                     "acl": "read",
-                    "style": "default"
+                    "style": "secondary"
                 },
                 {
                     "label": "Email Templates",
                     "link": "#EmailTemplate",
                     "acl": "read",
                     "aclScope": "EmailTemplate",
-                    "style": "default"
+                    "style": "secondary"
                 }
             ]
         }

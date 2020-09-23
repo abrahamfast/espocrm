@@ -2,11 +2,11 @@
 
 <% _.each(layout, function (panel, columnNumber) { %>
     <% hasHiddenPanel = panel.hidden || hasHiddenPanel; %>
-    <div class="card-inner h-100 panel panel-<%= panel.style %><% if (panel.name) { %>{{#if hiddenPanels.<%= panel.name %>}} hidden{{/if}}<% } %>"<% if (panel.name) print(' data-name="'+panel.name+'"') %>>
+    <div class="card card-preview h-100 panel panel-<%= panel.style %><% if (panel.name) { %>{{#if hiddenPanels.<%= panel.name %>}} hidden{{/if}}<% } %>"<% if (panel.name) print(' data-name="'+panel.name+'"') %>>
         <% if (panel.label) { %>
-        <div class="panel-heading card-head"><h4 class="panel-title"><%= panel.label %></h4></div>
+        <div class="card-header"><h4 class="panel-title"><%= panel.label %></h4></div>
         <% } %>
-        <div class="panel-body panel-body-form">
+        <div class="card-inner panel-body panel-body-form">
 
         <% var rows = panel.rows || [] %>
         <% var columns = panel.columns || [] %>
@@ -165,7 +165,7 @@
 <%
 if (hasHiddenPanel) {
 %>
-<div class="panel panel-default card card-bordered panels-show-more-delimiter" data-name="showMoreDelimiter">
+<div class="card-inner panel panel-default card card-bordered panels-show-more-delimiter" data-name="showMoreDelimiter">
     <a href="javascript:" data-action="showMoreDetailPanels" title="{{translate 'Show more'}}">
         <span class="fas fa-ellipsis-h fa-lg"></span>
     </a>

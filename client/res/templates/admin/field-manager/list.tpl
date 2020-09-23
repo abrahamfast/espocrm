@@ -1,6 +1,6 @@
 <div class="button-container">
     <div class="btn-group">
-        <button type="button" class="btn btn-primary" data-action="addField"><span class="fas fa-plus"></span> {{translate 'Add Field' scope='Admin'}}</button>
+        <button type="button" class="btn btn-primary" data-action="addField"><em class="icon ni ni-plus-fill-c"></em> {{translate 'Add Field' scope='Admin'}}</button>
     </div>
 </div>
 

@@ -75,7 +75,7 @@
                 {{#each fieldTableDataList}}
                     <tr>
                         <td><b>{{translate name category='scopeNamesPlural'}}</b></td>
-                        <td><button type="button" class="btn btn-link btn-sm action" data-action="addField" data-scope="{{name}}" title="{{translate 'Add Field'}}"><span class="fas fa-plus"></span></button></td>
+                        <td><button type="button" class="btn btn-link btn-sm action" data-action="addField" data-scope="{{name}}" title="{{translate 'Add Field'}}"><em class="icon ni ni-plus-fill-c"></em></button></td>
                         <td colspan="3"></td>
                     </tr>
                     {{#each list}}

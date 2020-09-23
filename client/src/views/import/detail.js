@@ -63,7 +63,7 @@ define('views/import/detail', 'views/detail', function (Dep) {
                 label: "Remove Import Log",
                 action: "removeImportLog",
                 name: 'removeImportLog',
-                style: "default",
+                style: "primary",
                 acl: "delete",
                 title: this.translate('removeImportLog', 'messages', 'Import'),
             }, true);
@@ -82,7 +82,7 @@ define('views/import/detail', 'views/detail', function (Dep) {
                 label: "Remove Duplicates",
                 name: 'removeDuplicates',
                 action: "removeDuplicates",
-                style: "default",
+                style: "primary",
                 acl: "edit",
                 title: this.translate('removeDuplicates', 'messages', 'Import'),
                 hidden: !this.model.get('duplicateCount'),

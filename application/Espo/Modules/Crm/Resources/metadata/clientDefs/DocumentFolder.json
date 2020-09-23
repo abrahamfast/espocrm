@@ -8,13 +8,13 @@
                     "label": "List View",
                     "link": "#DocumentFolder\/list",
                     "acl": "read",
-                    "style": "default"
+                    "style": "secondary"
                 },
                 {
                     "label": "Documents",
                     "link": "#Document",
                     "acl": "read",
-                    "style": "default",
+                    "style": "secondary",
                     "aclScope": "Document"
                 }
             ]
@@ -25,13 +25,13 @@
                     "label": "Tree View",
                     "link": "#DocumentFolder",
                     "acl": "read",
-                    "style": "default"
+                    "style": "secondary"
                 },
                 {
                     "label": "Documents",
                     "link": "#Document",
                     "acl": "read",
-                    "style": "default",
+                    "style": "secondary",
                     "aclScope": "Document"
                 }
             ]

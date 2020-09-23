@@ -18,7 +18,7 @@
     {{#if showRootMenu}}
     <div class="btn-group pull-right">
         <a href="javascript:" class="small dropdown-toggle btn-link" data-toggle="dropdown">
-            <span class="fas fa-ellipsis-h"></span>
+            <em class="icon ni ni-more-h"></em>
         </a>
         <ul class="dropdown-menu">
             {{#if hasExpandedToggler}}
@@ -53,7 +53,7 @@
     {{#unless createDisabled}}
     <li class="list-group-item">
         <div>
-            <a href="javascript:" data-action="create" class="action small" title="{{translate 'Add'}}"><span class="fas fa-plus"></span></a>
+            <a href="javascript:" data-action="create" class="action small" title="{{translate 'Add'}}"><em class="icon ni ni-plus-fill-c"></em></a>
         </div>
     </li>
     {{/unless}}

@@ -64,7 +64,7 @@ Espo.define('views/dashlets/records', 'views/dashlets/abstract/record-list', fun
                 this.actionList.unshift({
                     name: 'create',
                     html: this.translate('Create ' + scope, 'labels', scope),
-                    iconHtml: '<span class="fas fa-plus"></span>',
+                    iconHtml: '<em class="icon ni ni-plus-fill-c"></em>',
                     url: '#' + scope + '/create'
                 });
             }

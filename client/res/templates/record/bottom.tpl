@@ -6,7 +6,7 @@
             </a>
         </div>
     {{/if}}
-    <div class="panel panel-{{#if style}}{{style}}{{else}}default{{/if}} panel-{{name}}{{#if hidden}} hidden{{/if}}{{#if sticked}} sticked{{/if}}" data-name="{{name}}" data-name="{{name}}">
+    <div class="card card-preview card-inner  panel panel-{{#if style}}{{style}}{{else}}default{{/if}} panel-{{name}}{{#if hidden}} hidden{{/if}}{{#if sticked}} sticked{{/if}}" data-name="{{name}}" data-name="{{name}}">
         <div class="panel-heading card-head">
             <div class="pull-right btn-group panel-actions-container">{{{var actionsViewKey ../this}}}</div>
             <h4 class="panel-title">

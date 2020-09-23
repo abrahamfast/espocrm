@@ -6,7 +6,7 @@
                     {{translate 'unsubscribed' category='messages' scope='Campaign'}}
                 </p>
                 <p>
-                    <a class="btn btn-default btn-sm" href="{{revertUrl}}">{{translate 'Subscribe again' scope='Campaign'}}</a>
+                    <a class="btn btn-secondary btn-sm" href="{{revertUrl}}">{{translate 'Subscribe again' scope='Campaign'}}</a>
                 </p>
             </div>
         </div>

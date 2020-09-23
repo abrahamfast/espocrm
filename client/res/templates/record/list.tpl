@@ -24,7 +24,7 @@
         <div class="btn-group">
             {{#if dropdownItemList.length}}
             <button type="button" class="btn btn-text dropdown-toggle dropdown-item-list-button" data-toggle="dropdown">
-                <span class="fas fa-ellipsis-h"></span>
+                <em class="icon ni ni-more-h"></em>
             </button>
             <ul class="dropdown-menu pull-left">
                 {{#each dropdownItemList}}

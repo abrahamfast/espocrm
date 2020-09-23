@@ -47,7 +47,7 @@ define('views/email/fields/body', 'views/fields/wysiwyg', function (Dep) {
             this.buttons['insert-field'] = function (context) {
                 var ui = $.summernote.ui;
                 var button = ui.button({
-                    contents: '<i class="fas fa-plus"></i>',
+                    contents: '<i class="icon ni ni-plus-fill-c"></i>',
                     tooltip: this.translate('Insert Field', 'labels', 'Email'),
                     click: function () {
                         this.showInsertFieldModal();

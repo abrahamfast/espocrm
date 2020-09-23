@@ -4,7 +4,7 @@
     {{#each functionDataList}}
         <li class="list-group-item clearfix">
             <button class="btn btn-primary pull-right btn-sm btn-icon" data-action="add" data-value="{{insertText}}">
-                <span class="fas fa-plus"></span>
+                <em class="icon ni ni-plus-fill-c"></em>
             </button>
             {{insertText}}
         </li>

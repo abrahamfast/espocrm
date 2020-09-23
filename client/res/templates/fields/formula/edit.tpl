@@ -8,7 +8,7 @@
     <div class="col-md-2 col-sm-2 col-xs-12">
         <div class="button-container">
             <div class="btn-group pull-right">
-                <button type="button" class="btn btn-primary btn-sm dropdown-toggle btn-icon" data-toggle="dropdown"><span class="fas fa-plus"></span></button>
+                <button type="button" class="btn btn-primary btn-sm dropdown-toggle btn-icon" data-toggle="dropdown"><em class="icon ni ni-plus-fill-c"></em></button>
                 <ul class="dropdown-menu pull-right">
                     {{#if targetEntityType}}
                     <li><a href="javascript:" data-action="addAttribute">{{translate 'Attribute'}}</a></li>

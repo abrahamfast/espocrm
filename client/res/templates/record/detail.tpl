@@ -5,7 +5,7 @@
             {{#each buttonList}}{{button name scope=../../entityType label=label style=style hidden=hidden html=html}}{{/each}}
             {{#if dropdownItemList}}
             <button type="button" class="btn btn-primary dropdown-toggle dropdown-item-list-button{{#if dropdownItemListEmpty}} hidden{{/if}}" data-toggle="dropdown">
-                <span class="fas fa-ellipsis-h"></span>
+                <em class="icon ni ni-more-h"></em>
             </button>
             <ul class="dropdown-menu pull-left">
                 {{#each dropdownItemList}}
@@ -40,7 +40,7 @@
         {{#each buttonEditList}}{{button name scope=../../entityType label=label style=style hidden=hidden html=html}}{{/each}}
         {{#if dropdownEditItemList}}
         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            <span class="fas fa-ellipsis-h"></span>
+            <em class="icon ni ni-more-h"></em>
         </button>
         <ul class="dropdown-menu pull-left">
             {{#each dropdownEditItemList}}
@@ -60,13 +60,13 @@
     </div>
     {{/unless}}
 
-    <div class="record-grid{{#if isWide}} record-grid-wide{{/if}}{{#if isSmall}} record-grid-small{{/if}}">
-        <div class="left">
+    <div class="row gy-5 record-grid{{#if isWide}} record-grid-wide{{/if}}{{#if isSmall}} record-grid-small{{/if}}">
+        <div class="left col-lg-7">
             <div class="middle">{{{middle}}}</div>
             <div class="extra">{{{extra}}}</div>
             <div class="bottom">{{{bottom}}}</div>
         </div>
-        <div class="side">
+        <div class="side col-lg-5">
         {{{side}}}
         </div>
     </div>

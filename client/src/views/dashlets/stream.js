@@ -76,7 +76,7 @@ define('views/dashlets/stream', 'views/dashlets/abstract/base', function (Dep) {
                 this.actionList.unshift({
                     name: 'create',
                     html: this.translate('Create Post', 'labels'),
-                    iconHtml: '<span class="fas fa-plus"></span>'
+                    iconHtml: '<em class="icon ni ni-plus-fill-c"></em>'
                 });
             }
         },

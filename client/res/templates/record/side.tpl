@@ -6,9 +6,9 @@
             </a>
         </div>
     {{/if}}
-<div class="card-inner  panel panel-{{#if style}}{{style}}{{else}}default{{/if}} panel-{{name}}{{#if hidden}} hidden{{/if}}{{#if sticked}} sticked{{/if}}" data-name="{{name}}" data-name="{{name}}">
+<div class="card card-preview panel panel-{{#if style}}{{style}}{{else}}default{{/if}} panel-{{name}}{{#if hidden}} hidden{{/if}}{{#if sticked}} sticked{{/if}}" data-name="{{name}}" data-name="{{name}}">
     {{#if label}}
-    <div class="panel-heading card-head">
+    <div class="card-inner panel-heading card-head">
         <div class="pull-right btn-group panel-actions-container">{{{var ../actionsViewKey ../../this}}}</div>
         <h4 class="panel-title">
             {{#unless notRefreshable}}
@@ -25,7 +25,7 @@
         </h4>
     </div>
     {{/if}}
-    <div class="panel-body{{#if isForm}} panel-body-form{{/if}}" data-name="{{name}}">
+    <div class="card-inner panel-body{{#if isForm}} panel-body-form{{/if}}" data-name="{{name}}">
         {{{var name ../this}}}
     </div>
 </div>
