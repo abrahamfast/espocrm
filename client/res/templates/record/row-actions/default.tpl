@@ -1,4 +1,5 @@
 {{#if actionList.length}}
+
 <div class="list-row-buttons btn-group pull-right">
     <button type="button" class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown">
         <span class="caret"></span>
@@ -10,6 +11,3 @@
     </ul>
 </div>
 {{/if}}
-
-
-
