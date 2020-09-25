@@ -5,20 +5,20 @@
         <input type="email" class="form-control email-address" value="{{emailAddress}}" autocomplete="espo-{{../name}}" maxlength={{../itemMaxLength}}>
         <span class="input-group-btn">
             <button class="btn btn-primary btn-icon email-property{{#if primary}} active{{/if}} hidden" type="button" tabindex="-1" data-action="switchEmailProperty" data-property-type="primary" data-toggle="tooltip" data-placement="top" title="{{translate 'Primary' scope='EmailAddress'}}">
-                <span class="fas fa-star fa-sm{{#unless primary}} text-muted{{/unless}}"></span>
+                <i class="icon ni ni-bookmark{{#unless primary}} text-muted{{/unless}}"></i>
             </button>
             <button class="btn btn-primary btn-icon email-property{{#if optOut}} active{{/if}}" type="button" tabindex="-1" data-action="switchEmailProperty" data-property-type="optOut" data-toggle="tooltip" data-placement="top" title="{{translate 'Opted Out' scope='EmailAddress'}}">
-                <span class="fa fa-ban{{#unless optOut}} text-muted{{/unless}}"></span>
+                <i class="icon ni ni-alert-fill{{#unless optOut}} text-muted{{/unless}}"></i>
             </button>
             <button class="btn btn-primary btn-icon email-property{{#if invalid}} active{{/if}}" type="button" tabindex="-1" data-action="switchEmailProperty" data-property-type="invalid" data-toggle="tooltip" data-placement="top" title="{{translate 'Invalid' scope='EmailAddress'}}">
-                <span class="fa fa-exclamation-circle{{#unless invalid}} text-muted{{/unless}}"></span>
+                <i class="icon ni ni-alert-fill-c{{#unless invalid}} text-muted{{/unless}}"></i>
             </button>
             <button class="btn btn-link btn-icon hidden" type="button" tabindex="-1" data-action="removeEmailAddress" data-property-type="invalid" data-toggle="tooltip" data-placement="top" title="{{translate 'Remove'}}">
-                <span class="fas fa-times"></span>
+                <i class="icon ni ni-plus-c"></i>
             </button>
         </span>
     </div>
 {{/each}}
 </div>
 
-<button class="btn btn-primary btn-icon" type="button" data-action="addEmailAddress"><span class="fa fa-plus"></span></button>
+<button class="btn btn-primary btn-icon" type="button" data-action="addEmailAddress"><i class="icon ni ni-plus-fill-c"></i></button>

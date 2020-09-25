@@ -1,13 +1,12 @@
 {{#if actionList.length}}
-
-<div class="list-row-buttons btn-group pull-right">
-    <button type="button" class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown">
-        <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu pull-right">
-    {{#each actionList}}
-        <li><a {{#if link}}href="{{link}}"{{else}}href="javascript:"{{/if}} class="action" {{#if action}} data-action={{action}}{{/if}}{{#each data}} data-{{@key}}="{{./this}}"{{/each}}>{{#if html}}{{{html}}}{{else}}{{translate label scope=../../scope}}{{/if}}</a></li>
-    {{/each}}
-    </ul>
+<div class="drodown">
+    <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown" aria-expanded="false"><em class="icon ni ni-more-h"></em></a>
+    <div class="dropdown-menu dropdown-menu-right" style="">
+        <ul class="link-list-opt no-bdr">
+         {{#each actionList}}
+            <li><a {{#if link}}href="{{link}}"{{else}}href="javascript:"{{/if}} class="action" {{#if action}} data-action={{action}}{{/if}}{{#each data}} data-{{@key}}="{{./this}}"{{/each}}>{{#if html}}{{{html}}}{{else}}<span>{{translate label scope=../../scope}}</span>{{/if}}</a></li>
+         {{/each}}
+        </ul>
+    </div>
 </div>
 {{/if}}

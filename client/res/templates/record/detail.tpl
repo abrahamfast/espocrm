@@ -35,29 +35,6 @@
         </div>
         {{/if}}
     </div>
-    <div class="detail-button-container button-container edit-buttons hidden clearfix">
-        <div class="btn-group actions-btn-group" role="group">
-        {{#each buttonEditList}}{{button name scope=../../entityType label=label style=style hidden=hidden html=html}}{{/each}}
-        {{#if dropdownEditItemList}}
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-            <em class="icon ni ni-more-h"></em>
-        </button>
-        <ul class="dropdown-menu pull-left">
-            {{#each dropdownEditItemList}}
-            {{#if this}}
-            <li class="{{#if hidden}}hidden{{/if}}"><a href="javascript:" class="action" data-action="{{name}}">{{#if html}}{{{html}}}{{else}}{{translate label scope=../../../entityType}}{{/if}}</a></li>
-            {{else}}
-                {{#unless @first}}
-                {{#unless @last}}
-                <li class="divider"></li>
-                {{/unless}}
-                {{/unless}}
-            {{/if}}
-            {{/each}}
-        </ul>
-        {{/if}}
-        </div>
-    </div>
     {{/unless}}
 
     <div class="row gy-5 record-grid{{#if isWide}} record-grid-wide{{/if}}{{#if isSmall}} record-grid-small{{/if}}">

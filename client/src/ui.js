@@ -88,7 +88,7 @@ define('ui', [], function () {
                 headerClassName = ' fixed-height';
             }
             this.contents += '<header class="modal-header'+headerClassName+'">' +
-                             ((this.closeButton) ? '<a href="javascript:" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></a>' : '') +
+                             ((this.closeButton) ? '<a href="javascript:" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>' : '') +
                              '<h4 class="modal-title"><span class="modal-title-text">' + this.header + '</span></h4>' +
                              '</header>';
         }
@@ -101,7 +101,7 @@ define('ui', [], function () {
             footerHtml = '<footer class="modal-footer bg-light">' + footerHtml + '</footer>';
         }
 
-        if (this.options.footerAtTheTop) {
+        if (this.options.footerAtTheTop && false) {
             this.contents += footerHtml + body;
         } else {
             this.contents += body + footerHtml;
@@ -191,7 +191,8 @@ define('ui', [], function () {
                         }
                     }
 
-                    this.$el.find('div.modal-body').css(cssParams);
+                    // this.$el.find('div.modal-body').css(cssParams);
+
                 }.bind(this);
                 $window.off('resize.modal-height');
                 $window.on('resize.modal-height', processResize);

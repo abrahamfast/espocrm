@@ -27,6 +27,6 @@
         {{/each}}
     </div>
     <div>
-        <a href="javascript:" data-action="addOptionList" title="{{translate 'Add'}}" class="add-option-list"><span class="fas fa-plus fa-sm"></span></a>
+        <a href="javascript:" data-action="addOptionList" title="{{translate 'Add'}}" class="add-option-list"><i class="icon ni ni-plus-c"></i></a>
     </div>
 </div>

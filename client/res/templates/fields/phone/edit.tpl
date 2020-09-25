@@ -8,20 +8,20 @@
         <input type="input" class="form-control phone-number no-margin-shifting" value="{{phoneNumber}}" autocomplete="espo-{{../name}}" maxlength={{../itemMaxLength}}>
         <span class="input-group-btn">
             <button class="btn btn-primary btn-icon phone-property{{#if primary}} active{{/if}} hidden" type="button" tabindex="-1" data-action="switchPhoneProperty" data-property-type="primary" data-toggle="tooltip" data-placement="top" title="{{translate 'Primary' scope='PhoneNumber'}}">
-                <span class="fa fa-star fa-sm{{#unless primary}} text-muted{{/unless}}"></span>
+                <i class="icon ni ni-bookmark{{#unless primary}} text-muted{{/unless}}"></i>
             </button>
             <button class="btn btn-primary btn-icon phone-property{{#if optOut}} active{{/if}}" type="button" tabindex="-1" data-action="switchPhoneProperty" data-property-type="optOut" data-toggle="tooltip" data-placement="top" title="{{translate 'Opted Out' scope='EmailAddress'}}">
-                <span class="fa fa-ban{{#unless optOut}} text-muted{{/unless}}"></span>
+                <i class="icon ni ni-alert-fill-c{{#unless optOut}} text-muted{{/unless}}"></i>
             </button>
             <button class="btn btn-primary btn-icon phone-property{{#if invalid}} active{{/if}}" type="button" tabindex="-1" data-action="switchPhoneProperty" data-property-type="invalid" data-toggle="tooltip" data-placement="top" title="{{translate 'Invalid' scope='EmailAddress'}}">
-                <span class="fa fa-exclamation-circle{{#unless invalid}} text-muted{{/unless}}"></span>
+                <i class="icon ni ni-alert-fill-c{{#unless invalid}} text-muted{{/unless}}"></i>
             </button>
             <button class="btn btn-link btn-icon hidden" type="button" tabindex="-1" data-action="removePhoneNumber" data-property-type="invalid" data-toggle="tooltip" data-placement="top" title="{{translate 'Remove'}}">
-                <span class="fas fa-times"></span>
+                <i class="icon ni ni-plus-c"></i>
             </button>
         </span>
     </div>
 {{/each}}
 </div>
 
-<button class="btn btn-primary btn-icon" type="button" data-action="addPhoneNumber"><span class="fa fa-plus"></span></button>
+<button class="btn btn-primary btn-icon" type="button" data-action="addPhoneNumber"><i class="icon ni ni-plus-fill-c"></i></button>
