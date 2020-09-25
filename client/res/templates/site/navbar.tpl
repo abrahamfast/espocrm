@@ -30,7 +30,7 @@
             <div class="nk-sidebar-footer">
                 <ul class="nk-menu nk-menu-md">
                     <li class="nk-menu-item">
-                        <a href="#Admin" class="nk-menu-link" title="{{translate 'Customize'}}">
+                        <a href="#" data-toggle="modal" data-target="#covid-feedback"  class="nk-menu-link" title="{{translate 'Customize'}}">
                             <span class="nk-menu-icon"><em class="icon ni ni-opt"></em></span>
                         </a>
                     </li>
@@ -51,13 +51,14 @@
                         {{#unless divider}}
                         <li>
                             <a href="{{#if link}}{{link}}{{else}}javascript:{{/if}}" class="{{#if action}} action{{/if}}"{{#if action}} data-action="{{action}}"{{/if}}>{{#if html}}{{{html}}}{{else}}{{label}}{{/if}}</a>
-                        </li>  
+                        </li>
                         {{else}}
                         <hr class="dropdown-divider">
                         {{/unless}}
-                    {{/each}} 
+                    {{/each}}
                     </ul>
             </div>
         </div>
     </div>
 </div>
+

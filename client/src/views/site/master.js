@@ -49,6 +49,10 @@ define('views/site/master', 'view', function (Dep) {
                 id: 'nksidebar',
                 view: 'views/site/nksidebar'
             },
+            modal: {
+                id: 'modal',
+                view: 'views/site/modal'
+            },
             footer: {
                 el: 'body > footer',
                 view: 'views/site/footer'

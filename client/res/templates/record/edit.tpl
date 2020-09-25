@@ -1,6 +1,6 @@
 <div class="edit" id="{{id}}" data-scope="{{scope}}">
     {{#unless buttonsDisabled}}
-    <div class="detail-button-container button-container record-buttons clearfix">
+    <div class="detail-button-container button-container record-buttons clearfix"  style="padding: 20px">
         <div class="btn-group actions-btn-group" role="group">
         {{#each buttonList}}{{button name scope=../../entityType label=label style=style html=html}}{{/each}}
         {{#if dropdownItemList}}

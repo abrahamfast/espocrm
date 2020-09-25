@@ -88,8 +88,8 @@ define('ui', [], function () {
                 headerClassName = ' fixed-height';
             }
             this.contents += '<header class="modal-header'+headerClassName+'">' +
+                             '<h5 class="modal-title">' + this.header + '</h5>' +
                              ((this.closeButton) ? '<a href="javascript:" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>' : '') +
-                             '<h4 class="modal-title"><span class="modal-title-text">' + this.header + '</span></h4>' +
                              '</header>';
         }
 
@@ -241,7 +241,7 @@ define('ui', [], function () {
                 }
                 rightPart +=
                     '<button type="button" ' + (o.disabled ? 'disabled="disabled" ' : '') +
-                    'class="btn btn-' + (o.style || 'default') + (o.disabled ? ' disabled' : '') + (o.hidden ? ' hidden' : '') + className+'" ' +
+                    'class="btn btn-' + (o.style || 'primary') + (o.disabled ? ' disabled' : '') + (o.hidden ? ' hidden' : '') + className+'" ' +
                     'data-name="' + o.name + '"' + (o.title ? ' title="'+o.title+'"' : '') + '>' +
                     (o.html || o.text) + '</button> ';
             }, this);
@@ -254,7 +254,7 @@ define('ui', [], function () {
                 }
                 leftPart +=
                     '<button type="button" ' + (o.disabled ? 'disabled="disabled" ' : '') +
-                    'class="btn btn-' + (o.style || 'default') + (o.disabled ? ' disabled' : '') + (o.hidden ? ' hidden' : '') + className+'" ' +
+                    'class="btn btn-' + (o.style || 'primary') + (o.disabled ? ' disabled' : '') + (o.hidden ? ' hidden' : '') + className+'" ' +
                     'data-name="' + o.name + '"' + (o.title ? ' title="'+o.title+'"' : '') + '>' +
                     (o.html || o.text) + '</button> ';
             }, this);

@@ -23,19 +23,19 @@
             {
                 "url": "#ScheduledJob",
                 "label": "Scheduled Jobs",
-                "iconClass": "fas fa-clock",
+                "iconClass": "icon ni ni-clock",
                 "description": "scheduledJob"
             },
             {
                 "url": "#Admin/currency",
                 "label": "Currency",
-                "iconClass": "fas fa-euro-sign",
+                "iconClass": "icon ni ni-sign-eur",
                 "description": "currency"
             },
             {
                 "url": "#Admin/notifications",
                 "label": "Notifications",
-                "iconClass": "fas fa-bell",
+                "iconClass": "icon ni ni-bell",
                 "description": "notifications"
             },
             {
@@ -47,7 +47,7 @@
             {
                 "url": "#Admin/extensions",
                 "label": "Extensions",
-                "iconClass": "fas fa-upload",
+                "iconClass": "icon ni ni-upload",
                 "description": "extensions"
             },
             {
@@ -59,7 +59,7 @@
             {
                 "url": "#Admin/upgrade",
                 "label": "Upgrade",
-                "iconClass": "fas fa-arrow-alt-circle-up",
+                "iconClass": "icon ni ni-chevron-up-c",
                 "description": "upgrade"
             },
             {
@@ -71,7 +71,7 @@
             {
                 "action": "rebuild",
                 "label": "Rebuild",
-                "iconClass": "fas fa-database",
+                "iconClass": "icon ni ni-db-fill",
                 "description": "rebuild"
             }
         ],
@@ -83,19 +83,19 @@
             {
                 "url": "#User",
                 "label": "Users",
-                "iconClass": "fas fa-user",
+                "iconClass": "icon ni ni-user-c",
                 "description": "users"
             },
             {
                 "url": "#Team",
                 "label": "Teams",
-                "iconClass": "fas fa-users",
+                "iconClass": "icon ni ni-account-setting-fill",
                 "description": "teams"
             },
             {
                 "url": "#Role",
                 "label": "Roles",
-                "iconClass": "fas fa-key",
+                "iconClass": "icon ni ni-puzzle",
                 "description": "roles"
             },
             {

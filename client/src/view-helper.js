@@ -203,7 +203,7 @@ define('view-helper', ['lib!client/lib/purify.min.js'], function () {
             });
 
             Handlebars.registerHelper('button', function (name, options) {
-                var style = options.hash.style || 'default';
+                var style = options.hash.style || 'primary';
                 var scope = options.hash.scope || null;
                 var label = options.hash.label || name;
 
