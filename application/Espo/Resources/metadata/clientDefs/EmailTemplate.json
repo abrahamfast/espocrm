@@ -44,5 +44,5 @@
         "actual"
     ],
     "placeholderList": ["today", "now", "currentYear", "optOutUrl", "optOutLink"],
-    "iconClass": "fas fa-envelope-square"
+    "iconClass": "icon ni ni-emails"
 }

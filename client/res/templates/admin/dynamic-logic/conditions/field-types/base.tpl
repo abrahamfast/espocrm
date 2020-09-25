@@ -5,7 +5,7 @@
     </div>
     <div class="col-sm-4 value-container">{{{value}}}</div>
     <div class="col-sm-2">
-        <a class="pull-right" href="javascript:" data-action="remove"><span class="fas fa-times"></span></a>
+        <a class="pull-right" href="javascript:" data-action="remove"><em class="icon ni ni-minus-c"></em></a>
         <span>{{translate operator category='logicalOperators' scope='Admin'}}</span>
     </div>
 </div>

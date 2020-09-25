@@ -39,5 +39,5 @@
 	    ]
     },
     "searchPanelDisabled": true,
-    "iconClass": "fas fa-file-import"
+    "iconClass": "icon ni ni-db"
 }

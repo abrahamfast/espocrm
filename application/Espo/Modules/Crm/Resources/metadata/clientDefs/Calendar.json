@@ -8,5 +8,5 @@
     "allDayScopeList": ["Task"],
     "modeList": ["month", "agendaWeek", "timeline", "agendaDay"],
     "additionalColorList": ["#AB78AD", "#CC9B45"],
-    "iconClass": "far fa-calendar-alt"
+    "iconClass": "icon ni ni-calendar-booking-fill"
 }

@@ -188,5 +188,5 @@
         }
     },
    "boolFilterList": ["onlyMy"],
-   "iconClass": "fas fa-chart-line"
+   "iconClass": "icon ni ni-growth"
 }

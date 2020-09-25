@@ -119,5 +119,5 @@
     "selectDefaultFilters": {
         "filter": "active"
     },
-    "iconClass": "fas fa-user-circle"
+    "iconClass": "icon ni ni-users"
 }

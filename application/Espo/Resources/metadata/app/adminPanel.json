@@ -5,13 +5,13 @@
             {
                 "url": "#Admin/settings",
                 "label": "Settings",
-                "iconClass": "fas fa-cog",
+                "iconClass": "icon ni ni-setting-alt",
                 "description": "settings"
             },
             {
                 "url": "#Admin/userInterface",
                 "label": "User Interface",
-                "iconClass": "fas fa-desktop",
+                "iconClass": "icon ni ni-monitor",
                 "description": "userInterface"
             },
             {

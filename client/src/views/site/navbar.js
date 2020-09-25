@@ -36,6 +36,10 @@ define('views/site/navbar', 'view', function (Dep) {
 
         data: function () {
             return {
+                tabDefsHome: this.tabDefsHome,
+                tabDefsTools: this.tabDefsTools,
+                tabDefsManage: this.tabDefsManage,
+                panelDataList: this.panelDataList,
                 tabDefsList: this.tabDefsList,
                 title: this.options.title,
                 menuDataList: this.getMenuDataList(),
@@ -43,6 +47,8 @@ define('views/site/navbar', 'view', function (Dep) {
                 enableQuickCreate: this.quickCreateList.length > 0,
                 userId: this.getUser().id,
                 logoSrc: this.getLogoSrc(),
+                avatar: this.getAvatar(),
+                isAdmin: this.getUser().isAdmin()
             };
         },
 
@@ -606,6 +612,7 @@ define('views/site/navbar', 'view', function (Dep) {
 
         setupTabDefsList: function () {
             var tabDefsList = [];
+            var tabDefsManage = {marketing: [], crm: [], support: [], sales: [], tools: [], home: []};
             var moreIsMet = false;
             var isHidden = false;
 
@@ -673,8 +680,61 @@ define('views/site/navbar', 'view', function (Dep) {
                 if (color && !iconClass) {
                     o.colorIconClass = 'color-icon fas fa-square-full';
                 }
+
+                var home = ['Home']
+                var crm = ['Account', 'Contact', 'Lead',  'Calendar', 'Call', 'Task', 'Meeting']
+                var support = ['Case', 'Email', 'Document', 'KnowledgeBaseArticle']
+                var tools = ['EmailTemplate', 'Import', 'Stream', 'User', 'Template', 'Team']
+                var marketing = ['Campaign', 'TargetList','Opportunity']
+                var sales = [
+                    'Product', 'ProductBrand', 'ProductCategory', 'Quote',
+                    'ReportCategory', 'QuoteItem', 'BpmnProcess', 'BpmnUserTask'
+                ]
+
+                for(item in crm) {
+                    if(o.name == crm[item]) {
+                        tabDefsManage.crm.push(o)
+                    }
+                }
+
+                for(item in home) {
+                    if(o.name == home[item]) {
+                        tabDefsManage.home.push(o)
+                    }
+                }
+
+                for(item in support) {
+                    if(o.name == support[item]) {
+                        tabDefsManage.support.push(o)
+                    }
+                }
+                for(item in sales) {
+                    if(o.name == sales[item]) {
+                        tabDefsManage.sales.push(o)
+                    }
+                }
+                for(item in tools) {
+                    if(o.name == tools[item]) {
+                        tabDefsManage.tools.push(o)
+                    }
+                }
+
+                for(item in marketing) {
+                    if(o.name == marketing[item]) {
+                        tabDefsManage.marketing.push(o)
+                    }
+                }
+
                 tabDefsList.push(o);
             }, this);
+
+
+            this.tabDefsHome = tabDefsManage.home;
+            this.tabDefsCrm = tabDefsManage.crm;
+            this.tabDefsMarketing = tabDefsManage.marketing;
+            this.tabDefsSales = tabDefsManage.sales;
+            this.tabDefsTools = tabDefsManage.tools;
+            this.tabDefsSupport = tabDefsManage.support;
             this.tabDefsList = tabDefsList;
         },
 
@@ -778,5 +838,10 @@ define('views/site/navbar', 'view', function (Dep) {
 
             this.isMoreTabsShown = false;
         },
+        getAvatar: function () {
+            let avatar = this.getHelper().getAvatarHtml(this.getUser().id, 'small', 16, 'avatar-link');
+            console.log(avatar)
+            return avatar;
+        }
     });
 });

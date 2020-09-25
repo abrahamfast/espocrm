@@ -1,4 +1,4 @@
 {
    "controller": "controllers/stream",
-   "iconClass": "fas fa-rss"
+   "iconClass": "icon ni ni-rss"
 }

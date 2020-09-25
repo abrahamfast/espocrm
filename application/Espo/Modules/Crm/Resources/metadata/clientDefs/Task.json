@@ -80,6 +80,6 @@
     "boolFilterList": [
         "onlyMy"
     ],
-    "iconClass": "fas fa-tasks",
+    "iconClass": "icon ni ni-task-c",
     "kanbanViewMode": true
 }

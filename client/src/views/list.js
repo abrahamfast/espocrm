@@ -170,8 +170,8 @@ define('views/list', ['views/main', 'search-manager'], function (Dep, SearchMana
             if (this.quickCreate) {
                 this.menu.buttons.unshift({
                     action: 'quickCreate',
-                    html: '<em class="icon ni ni-plus-c"></em> ' + this.translate('Create ' +  this.scope, 'labels', this.scope),
-                    style: 'default',
+                    html: '<em class="icon ni ni-plus-c"></em><span>' + this.translate('Create ' +  this.scope, 'labels', this.scope) + '</span>',
+                    style: 'primary',
                     acl: 'create',
                     aclScope: this.entityType || this.scope
                 });
@@ -179,8 +179,8 @@ define('views/list', ['views/main', 'search-manager'], function (Dep, SearchMana
                 this.menu.buttons.unshift({
                     link: '#' + this.scope + '/create',
                     action: 'create',
-                    html: '<em class="icon ni ni-plus-c"></em> ' + this.translate('Create ' +  this.scope,  'labels', this.scope),
-                    style: 'default',
+                    html: '<em class="icon ni ni-plus-c"></em><span>' + this.translate('Create ' +  this.scope, 'labels', this.scope) + '</span>',
+                    style: 'primary',
                     acl: 'create',
                     aclScope: this.entityType || this.scope
                 });
