@@ -90,10 +90,9 @@ define('views/login', 'view', function (Dep) {
                     trigger: 'manual',
                 }).popover('show');
 
-                var $cell = $el.closest('.form-group');
-                $cell.addClass('has-error');
+                $el.addClass('invalid');
                 $el.one('mousedown click', function () {
-                    $cell.removeClass('has-error');
+                    $cell.removeClass('invalid');
                     if (this.isPopoverDestroyed) return;
                     $el.popover('destroy');
                     this.isPopoverDestroyed = true;
@@ -144,10 +143,10 @@ define('views/login', 'view', function (Dep) {
         },
 
         onWrongCredentials: function () {
-            var cell = $('#login .form-group');
-            cell.addClass('has-error');
+            let cell = $('#login .form-control');
+            cell.addClass('invalid');
             this.$el.one('mousedown click', function () {
-                cell.removeClass('has-error');
+                cell.removeClass('invalid');
             });
             Espo.Ui.error(this.translate('wrongUsernamePasword', 'messages', 'User'));
         },

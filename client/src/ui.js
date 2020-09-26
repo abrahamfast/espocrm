@@ -472,7 +472,7 @@ define('ui', [], function () {
                     type = 'danger';
                 }
 
-                var el = $('<div class="alert alert-' + type + ' fade in" id="nofitication" />').css({
+                var el = $('<div class="alert alert-' + type + '  in" id="nofitication" />').css({
                     position: 'fixed',
                     top: '0px',
                     'z-index': 2000,
