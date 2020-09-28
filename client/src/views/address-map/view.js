@@ -81,13 +81,17 @@ define('views/address-map/view', 'views/main', function (Dep) {
 
             var headerIconHtml = this.getHeaderIconHtml();
 
-            return this.buildHeaderHtml([
+            let data = [
                 headerIconHtml +
-                    '<a href="' + rootUrl + '" class="action" data-action="navigateToRoot">' +
-                    this.getLanguage().translate(this.model.entityType, 'scopeNamesPlural') + '</a>',
+                '<a href="' + rootUrl + '" class="action" data-action="navigateToRoot">' +
+                this.getLanguage().translate(this.model.entityType, 'scopeNamesPlural') + '</a>',
                 name,
                 this.translate(this.options.field, 'fields', this.model.entityType)
-            ]);
+            ];
+
+            console.log(data);
+
+            return this.buildHeaderHtml(data);
         },
 
     });

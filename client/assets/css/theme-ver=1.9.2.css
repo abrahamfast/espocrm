@@ -1,5 +1,5 @@
 .nk-apps-sidebar {
-    z-index: 1048 !important;
+    z-index: 1040 !important;
 }
 .hidden, .hide {
     display: none;
@@ -11,10 +11,10 @@
 }
 
 
-/*.modal-backdrop{*/
-/*    z-index: 1048 !important;*/
-/*    background-color: #364a63b3 !important;*/
-/*}*/
+.modal-backdrop{
+    background-color: #364a63b3 !important;
+}
+
 /*!
  * required gridstack 1.2.1 CSS for default 12 and 1 columnMode size. Use gridstack-extra.css for others
  * https://gridstackjs.com/

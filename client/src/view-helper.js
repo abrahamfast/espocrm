@@ -358,7 +358,7 @@ define('view-helper', ['lib!client/lib/purify.min.js'], function () {
             }
 
             if (!noWhiteSpace) {
-                if (html) html += '&nbsp;';
+                // if (html) html += '&nbsp;';
             }
 
             return html;

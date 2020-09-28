@@ -4,8 +4,8 @@
                 <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
             </div>
             <div class="nk-header-app-name">
-                <div class="nk-header-app-logo"><em class="icon ni ni-dashlite bg-purple-dim"></em></div>
-                <div class="nk-header-app-info"><span class="sub-text">DashLite</span><span class="lead-text">Dashboard</span></div>
+                <div class="nk-header-app-logo"><em class="icon icon ni ni-b-si bg-purple-dim"></em></div>
+                <div class="nk-header-app-info"><span class="sub-text">Sabasales</span><span class="lead-text">Dashboard</span></div>
             </div>
             <div class="nk-header-menu is-light">
                 <div class="nk-header-menu-inner">

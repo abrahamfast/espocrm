@@ -129,13 +129,14 @@ define('views/main', 'view', function (Dep) {
         getHeader: function () {},
 
         buildHeaderHtml: function (arr) {
-            var a = [];
+            let a = [];
             arr.forEach(function (item) {
-                a.push(item);
+                let breadcrumb = '<div class="breadcrumb-item">' + item + '</div>'
+                a.push(breadcrumb);
             }, this);
 
-            return '<div class="header-breadcrumbs">' +
-                a.join('<div class="breadcrumb-separator"><span class="chevron-right"></span></div>') + '</div>';
+
+            return '<div class="breadcrumb breadcrumb-arrow">' + a + '</div>';
         },
 
         getHeaderIconHtml: function () {
